@@ -1,3 +1,4 @@
 Element.prototype.remove = function() {
-	this.parentNode.removeChild(this)
+	var parent = this.parentNode
+	if (parent) parent.removeChild(this)
 }
